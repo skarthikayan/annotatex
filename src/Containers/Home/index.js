@@ -41,13 +41,13 @@ function Home(props) {
         <img src={logo} alt="logo" className="logo" />
         <Navbar>
           <span className="home">Home</span>
-          <span onClick={() => executeScroll('ourServices')}>Our Servies</span>
+          <span onClick={() => executeScroll('ourServices')}>Our Services</span>
           <span onClick={() => executeScroll('contactUs')}>Contact us</span>
         </Navbar>
         <Social>
-          <img src={twiter} alt="logo" className="social" />
+          {/* <img src={twiter} alt="logo" className="social" />
           <img src={fb} alt="logo" className="social" />
-          <img src={linkedin} alt="logo" className="social" />
+          <img src={linkedin} alt="logo" className="social" /> */}
         </Social>
       </Header>
       <Banner bg={bg}>
@@ -100,22 +100,19 @@ function Home(props) {
         <div className="top">
           <div>
             <h4>CONTACT</h4>
-            <p>email@mail.com</p>
-            <p>email@mail.com</p>
-            <p>email@mail.com</p>
+            <p>dataannotate@gmail.com</p>
           </div>
           <div>
             <h4>ADDRESS</h4>
-            <p>Some sample Address line 1</p>
-            <p>Some sample Address line 1</p>
-            <p>Some sample Address line 1</p>
+            <p>#10-95, Block 9, Jalan Kukoh, Singapore - 160009</p>
+            <p></p>
           </div>
-          <div>
+          {/* <div>
             <h4>Find Us</h4>
             <p>Twitter</p>
             <p>Facebook</p>
             <p>LinkedIn</p>
-          </div>
+          </div> */}
         </div>
         <div className="bottom">
           <p>Copyright © 2020 AnnotateX, Inc. All rights reserved.</p>
@@ -156,6 +153,7 @@ export const Footer = styled(motion.div)`
 
 export const Social = styled(motion.div)`
   margin: 0 40px;
+  min-width: 150px;
   img {
     height: 30px;
     width: 30px;

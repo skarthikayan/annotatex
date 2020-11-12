@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 const Section3 = ({ title, to }) => {
   const [ref, inView, entry] = useInView({
     /* Optional options */
-    threshold: 0.2,
+    threshold: 0.1,
     triggerOnce: false,
   });
   const variants = {
@@ -49,7 +49,7 @@ const Section3 = ({ title, to }) => {
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScyi8hCXV_D1tR-RmlIYaWclfNCsT_x5m727m8IZQZmIzsVQA/viewform?embedded=true"
             width="600px"
-            height="1200px"
+            style={{height: '140vh'}}
             frameborder="0"
             marginheight="0"
             marginwidth="0"
@@ -118,7 +118,7 @@ const CardContainer = styled(motion.div)`
   flex-direction: column;
   display: flex;
   width: 100%
-  margin: 15px;
+  margin: 0px;
   // .form  {
   //     width: 50%;
   //     text-align: left;

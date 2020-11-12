@@ -12,7 +12,7 @@ import price from 'Images/price.png';
 import paul from 'Images/paul.png';
 import jonathon from 'Images/jonathon.png';
 import box from 'Images/boundingBox.gif';
-import poly from 'Images/polygon.gif';
+import poly from 'Images/image-segmentation.gif';
 import Card from 'Components/Card';
 
 const Section2 = ({ title, to }) => {
@@ -107,7 +107,7 @@ const Section2 = ({ title, to }) => {
                 cardDetails='Polygon'
                 key='Polygon'
               /> */}
-            <h3>Polygon</h3>
+            <h3>Image Segmentation</h3>
             <img
               className="example"
               src={poly}
@@ -128,7 +128,7 @@ const Section2 = ({ title, to }) => {
         >
           <div style={{ flex: 1, padding: '15px' }}>
             <h3>For researchers</h3>
-            <h4>Virtual assistance</h4>
+            <h4 style={{color: '#1E4A9A'}}>Virtual assistance</h4>
             <div
               style={{
                 display: 'flex',
@@ -152,7 +152,7 @@ const Section2 = ({ title, to }) => {
           </div>
           <div style={{ flex: 1, padding: '15px' }}>
             <h3>For companies</h3>
-            <h4>Extension of workforce</h4>
+            <h4 style={{color: '#1E4A9A'}}>Extension of workforce</h4>
             <div
               style={{
                 display: 'flex',
@@ -193,10 +193,10 @@ const Section2 = ({ title, to }) => {
           >
             <img
               src={scalable}
-              height="100px"
-              width="100px"
+              height="80px"
+              width="80px"
               alt="assistant"
-              style={{ margin: '15px' }}
+              style={{ margin: '20px' }}
             />
             <div>
             <h3 style={{color: '#1E4A9A'}}>Scalability</h3>
@@ -216,10 +216,10 @@ const Section2 = ({ title, to }) => {
           >
             <img
               src={quality}
-              height="100px"
-              width="100px"
+              height="80px"
+              width="80px"
               alt="assistant"
-              style={{ margin: '15px' }}
+              style={{ margin: '20px' }}
             />
             <div>
             <h3 style={{color: '#1E4A9A'}}>Quality assurance</h3>
@@ -239,10 +239,10 @@ const Section2 = ({ title, to }) => {
           >
             <img
               src={price}
-              height="100px"
-              width="100px"
+              height="80px"
+              width="80px"
               alt="assistant"
-              style={{ margin: '15px' }}
+              style={{ margin: '20px' }}
             />
             <div>
             <h3 style={{color: '#1E4A9A'}}>Competitive pricing</h3>
@@ -258,7 +258,7 @@ const Section2 = ({ title, to }) => {
             cardDetails={{
               icon: paul,
               name: 'Paul voigtlaender',
-              content: 'Compute Vision, RWTH Aachen',
+              content: 'Computer Vision, RWTH Aachen',
               url: 'https://www.vision.rwth-aachen.de/person/197/',
             }}
           />
@@ -280,7 +280,7 @@ export default memo(Section2);
 
 const Wrapper = styled(motion.div)`
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   display: flex;
   flex-direction: ${(p) => p.flexDirection || 'row'};
   width: 90%;
@@ -332,7 +332,7 @@ const CardContainer = styled(motion.div)`
   flex-direction: column;
   width: 100%;
   min-width: 320px;
-  margin: 15px;
+  margin: 15px 0;
   @media only screen and (max-width: 600px) {
     width: 100vw;
     height: 60%;
