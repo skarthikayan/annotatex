@@ -100,11 +100,11 @@ function Home(props) {
         <div className="top">
           <div>
             <h4>CONTACT</h4>
-            <p>dataannotate@gmail.com</p>
+            <p>sales@annotatex.com</p>
           </div>
           <div>
             <h4>ADDRESS</h4>
-            <p>#10-95, Block 9, Jalan Kukoh, Singapore - 160009</p>
+            <p>Jalan Kukoh, Singapore - 160009</p>
             <p></p>
           </div>
           {/* <div>
