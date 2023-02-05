@@ -95,8 +95,8 @@ function Home(props) {
         </AboutUs>
       </ContentWrapper>
       <OurServices scrollRef={'ourServices'} />
-      <ContactUs scrollRef={'contactUs'} />
-      <Footer>
+      {/* <ContactUs /> */}
+      <Footer id='contactUs' >
         <div className="top">
           <div>
             <h4>CONTACT</h4>

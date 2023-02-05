@@ -2,6 +2,10 @@
   "name": "labeleau",
   "version": "0.1.0",
   "private": true,
+  "author":{
+    "name": "Karthikayan S",
+    "email": "skarthikayan7@gmail.com"
+  },
   "dependencies": {
     "framer-motion": "^2.4.2",
     "query-string": "^6.13.1",
